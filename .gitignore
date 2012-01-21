@@ -1,0 +1,13 @@
+bin
+.cache
+.classpath
+.project
+.settings
+.scala_dependencies
+target
+project/boot
+project/target
+
+.idea
+out
+*.iml
