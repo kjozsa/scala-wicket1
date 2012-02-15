@@ -29,14 +29,4 @@ class WicketApplication extends WebApplication {
       }
     })
   }
-
-  //  getComponentInitializationListeners().add(new IComponentInitializationListener() {
-  //    def onInitialize(component: Component) {
-  //
-  //      if (component.isInstanceOf[Form[_]]) {
-  //        println("## form validation added")
-  //        component.add(new PropertyValidation());
-  //      }
-  //    }
-  //  })
 }
