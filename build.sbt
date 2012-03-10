@@ -6,7 +6,7 @@ libraryDependencies ++= Seq(
     "junit" % "junit" % "4.10" % "test",
     "org.scalatest" % "scalatest_2.9.1" % "1.6.1" % "test",
     "org.mockito" % "mockito-all" % "1.9.0" % "test",
-    "ch.qos.logback" % "logback-classic" % "1.0.0" % "compile->default",
+    "org.clapper" %% "avsl" % "0.3.6",
     "org.slf4j" % "jcl-over-slf4j" % "1.6.4",
     "org.apache.bval" % "bval-jsr303" % "0.3-incubating",
     "com.googlecode.lambdaj" % "lambdaj" % "2.3.3",
