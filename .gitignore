@@ -15,3 +15,5 @@ out
 activemq-data
 
 .sbt_completion_cache
+*.swp
+*~

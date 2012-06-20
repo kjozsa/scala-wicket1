@@ -18,8 +18,8 @@ object ModelFactory {
   }
 
   private def modelFactory[T](value: Any, proxiedValue: T): PropertyModel[T] = {
-    val a = ArgumentsFactory.actualArgument(proxiedValue);
-    val invokedPN = a.getInkvokedPropertyName();
-    new PropertyModel[T](value, invokedPN);
+    val arg = ArgumentsFactory.actualArgument(proxiedValue);
+    val propertyName = arg.getInkvokedPropertyName();
+    new PropertyModel[T](value, propertyName);
   }
 }
