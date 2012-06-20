@@ -18,7 +18,7 @@ class WicketApplication extends WebApplication {
 
   val logger = LoggerFactory.getLogger(classOf[WicketApplication])
 
-  def getHomePage() = classOf[FormTestPage]
+  def getHomePage() = classOf[FuturePanelPage]
 
   override def init() {
     super.init()
