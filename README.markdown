@@ -11,7 +11,7 @@ features:
 
 usage:
 
-    sbt eclipse with-source=true - create/refresh eclipse configuration
-    sbt container:start - start in jetty
-    sbt ~ ; compile; container:reload / - hack away with auto-reload
+    sbt eclipse with-source=true
+    sbt container:start 
+    sbt ~ ; compile; container:reload 
 
