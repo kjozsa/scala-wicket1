@@ -28,3 +28,4 @@ libraryDependencies += "org.mortbay.jetty" % "jetty" % "6.1.22" % "container"
 
 resourceDirectory in Compile <<= baseDirectory(_ / "src/main/scala") 
 
+
