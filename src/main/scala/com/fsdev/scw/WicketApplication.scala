@@ -16,10 +16,10 @@ import java.util.Date
 class WicketApplication extends WebApplication {
   lazy val logger = LoggerFactory.getLogger(classOf[WicketApplication])
   lazy val eventBus = new EventBus(this)
-  lazy val scheduler = Executors.newScheduledThreadPool(1)
 
   override def getHomePage() = classOf[PushPage]
 
+  val scheduler = Executors.newScheduledThreadPool(1)
   scheduler.scheduleAtFixedRate(new Runnable {
     override def run() {
       logger.info("pushing to event bus")
