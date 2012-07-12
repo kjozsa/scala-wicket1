@@ -27,6 +27,7 @@
 			<param-name>filterMappingUrlPattern</param-name>
 			<param-value>/*</param-value>
 		</init-param>
+		<load-on-startup>1</load-on-startup>
 	</servlet>
 
 	<servlet-mapping>
