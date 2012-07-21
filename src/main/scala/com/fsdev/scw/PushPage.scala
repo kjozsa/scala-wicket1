@@ -15,15 +15,23 @@ import java.text.DateFormat
  * @author kjozsa
  */
 class PushPage extends WebPage with Logging {
-  val pushLabel = new Label("pushLabel", new Model)
-  pushLabel.setOutputMarkupId(true)
-  add(pushLabel)
+  val pushNumber = new Label("pushNumber", new Model)
+  pushNumber.setOutputMarkupId(true)
+  add(pushNumber)
+
+  val pushString = new Label("pushString", new Model)
+  pushString.setOutputMarkupId(true)
+  add(pushString)
 
   @Subscribe
-  def update(target: AjaxRequestTarget, event: Date) {
-    logger.debug("push update event: {}", event)
+  def update(target: AjaxRequestTarget, event: OneEvent) {
+    pushNumber.setDefaultModelObject(event)
+    target.add(pushNumber)
+  }
 
-    pushLabel.setDefaultModelObject(event.getTime)
-    target.add(pushLabel)
+  @Subscribe
+  def update2(target: AjaxRequestTarget, event: OtherEvent) {
+    pushString.setDefaultModelObject(event)
+    target.add(pushString)
   }
 }

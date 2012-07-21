@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
     "ch.qos.logback" % "logback-classic" % "1.0.6",
     "org.apache.bval" % "bval-jsr303" % "0.4",
     "com.googlecode.lambdaj" % "lambdaj" % "2.3.3",
-    "org.apache.wicket" % "wicket" % "6.0.0-beta2", 
+    "org.apache.wicket" % "wicket" % "6.0.0-beta3", 
     "org.apache.wicket" % "wicket-atmosphere" % "0.1", 
     "org.eclipselink.persistence" % "javax.persistence" % "2.0",
     "org.eclipselink.persistence" % "eclipselink" % "2.3.2",
@@ -24,6 +24,8 @@ libraryDependencies ++= Seq(
 resolvers += "eclipse" at "http://mirror.csclub.uwaterloo.ca/eclipse/rt/eclipselink/maven.repo/"
 
 scalacOptions += "-deprecation"
+
+EclipseKeys.withSource := true
 
 seq(webSettings :_*)
 
