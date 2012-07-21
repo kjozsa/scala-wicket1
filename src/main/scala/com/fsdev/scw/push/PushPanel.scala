@@ -8,13 +8,13 @@ import org.apache.wicket.atmosphere.Subscribe
 import org.apache.wicket.markup.html.WebPage
 import org.apache.wicket.markup.html.basic.Label
 import org.apache.wicket.model.Model
-
 import com.fsdev.scw.Logging
+import org.apache.wicket.markup.html.panel.Panel
 
 /**
  * @author kjozsa
  */
-class PushPage extends WebPage with Logging {
+class PushPanel(id: String) extends Panel(id) with Logging {
   val pushNumber = new Label("pushNumber", new Model)
   pushNumber.setOutputMarkupId(true)
   add(pushNumber)

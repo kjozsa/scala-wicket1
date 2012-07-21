@@ -9,6 +9,7 @@ import org.apache.wicket.markup.html.panel.FeedbackPanel
 import com.fsdev.scw.richmodel.ModelFactory.on
 import com.fsdev.scw.Logging
 import org.apache.wicket.markup.html.form.Form
+import org.apache.wicket.markup.html.panel.Panel
 
 /**
  * @author kjozsa
@@ -19,7 +20,7 @@ class TestModel extends Serializable {
   override def toString = label
 }
 
-class FormTestPage extends WebPage with Logging {
+class FormPanel(id: String) extends Panel(id) with Logging {
   val testModel = new TestModel
 
   val form = new Form("form") {
@@ -30,7 +31,5 @@ class FormTestPage extends WebPage with Logging {
   add(form)
 
   form.add(new TextField("name", on(testModel)(_.label)))
-
   add(new FeedbackPanel("feedback"))
-
 }
