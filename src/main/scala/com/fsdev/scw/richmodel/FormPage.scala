@@ -1,17 +1,14 @@
 /**
  *
  */
-package com.fsdev.scw
+package com.fsdev.scw.richmodel
 
 import org.apache.wicket.markup.html.WebPage
 import org.apache.wicket.markup.html.form.TextField
 import org.apache.wicket.markup.html.panel.FeedbackPanel
-import org.slf4j.LoggerFactory
-import com.fsdev.scw.ModelFactory.on
+import com.fsdev.scw.richmodel.ModelFactory.on
+import com.fsdev.scw.Logging
 import org.apache.wicket.markup.html.form.Form
-import org.slf4j.Logger
-import org.apache.wicket.atmosphere.Subscribe
-import org.apache.wicket.ajax.AjaxRequestTarget
 
 /**
  * @author kjozsa

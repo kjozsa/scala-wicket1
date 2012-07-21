@@ -1,15 +1,15 @@
 /**
  *
  */
-package com.fsdev.scw
+package com.fsdev.scw.push
 
-import org.apache.wicket.markup.html.WebPage
-import org.apache.wicket.markup.html.basic.Label
 import org.apache.wicket.ajax.AjaxRequestTarget
 import org.apache.wicket.atmosphere.Subscribe
+import org.apache.wicket.markup.html.WebPage
+import org.apache.wicket.markup.html.basic.Label
 import org.apache.wicket.model.Model
-import java.util.Date
-import java.text.DateFormat
+
+import com.fsdev.scw.Logging
 
 /**
  * @author kjozsa

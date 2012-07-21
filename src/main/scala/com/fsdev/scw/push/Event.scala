@@ -1,7 +1,7 @@
 /**
  *
  */
-package com.fsdev.scw
+package com.fsdev.scw.push
 
 /**
  * @author kjozsa
