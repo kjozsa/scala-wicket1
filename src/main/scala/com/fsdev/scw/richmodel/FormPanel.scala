@@ -56,6 +56,7 @@ class FormPanel(id: String) extends Panel(id) with Logging with AsyncSupport {
   feedback.setOutputMarkupId(true)
   add(feedback)
 
+  /** receive websocket update event */
   @Subscribe
   def asyncUpdate(target: AjaxRequestTarget, event: ResultEvent) {
     dataBean.name = event.data.toString
