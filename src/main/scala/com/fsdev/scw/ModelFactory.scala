@@ -1,7 +1,8 @@
 /**
  *
  */
-package com.fsdev.scw.richmodel
+package com.fsdev.scw
+
 import ch.lambdaj.function.argument.ArgumentsFactory
 import org.apache.wicket.model.PropertyModel
 import ch.lambdaj.Lambda
